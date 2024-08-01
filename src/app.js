@@ -1,6 +1,8 @@
 window.onload = function() {
-  //write your code here
-  document.querySelector("#excuse").innerHTML = excusegenerate();
+  // document.querySelector("#excuse").innerHTML = excusegenerate();
+  document.querySelector("#generate").addEventListener("click", function() {
+    document.querySelector("#excuse").innerHTML = excusegenerate();
+  });
 };
 
 function excusegenerate() {
